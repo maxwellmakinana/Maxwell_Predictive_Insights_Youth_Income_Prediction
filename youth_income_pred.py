@@ -3,7 +3,7 @@ import pickle
 
 # Function to load the selected model
 def load_model(model_name):
-    model_path = f'/Users/da_m1_24/Documents/Maxwell_BA_N6_Qualification_Journey/Maxwell_Predictive_Insights_Youth_Income_Prediction/{model_name}.pkl'
+    model_path = f'{model_name}.pkl'
     with open(model_path, 'rb') as file:
         model = pickle.load(file)
     return model
