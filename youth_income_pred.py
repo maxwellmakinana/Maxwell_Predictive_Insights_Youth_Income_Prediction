@@ -1,7 +1,6 @@
 import streamlit as st
 #import pickle
-#import joblib
-from sklearn.externals import joblib
+import joblib
 
 # Function to load the selected model
 def load_model(model_name):
