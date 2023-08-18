@@ -1,11 +1,12 @@
 import streamlit as st
-import pickle
+#import pickle
+import joblib
 
 # Function to load the selected model
 def load_model(model_name):
     model_path = f'{model_name}.pkl'
     with open(model_path, 'rb') as file:
-        model = pickle.load(file)
+        model = joblib.load(file)
     return model
 
 # Mapping for decoding encoded features
